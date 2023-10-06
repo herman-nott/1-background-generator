@@ -1,0 +1,84 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+	font: 'Raleway', sans-serif;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    top: 15%;
+	background: linear-gradient(to right, red , yellow);
+}
+
+h1 {
+    font: 600 3.5em 'Raleway', sans-serif;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    width: 100%;
+}
+
+h3 {
+	font: 600 1em 'Raleway', sans-serif;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 0.01em;
+}
+
+.color1 {
+    margin-right: 5px;
+}
+
+.color2 {
+    margin-left: 5px;
+}
+
+button {
+    margin-top: 50px;
+    border-radius: 12px;
+    padding: 20px 10px;
+    font-size: 1rem;
+    color: white;
+    transition: .2s linear;
+    background: #2e3239;
+    border: none;
+    background-image: linear-gradient(to right, #2e3239 0%, #40454e 51%, #2e3239 100%);
+}
+
+button:hover {
+    box-shadow: 0 0 0 2px white, 0 0 0 4px #2e3239;
+    background-position: right center;
+}
+
+footer {
+    font-family: "Courier New", monospace;
+    letter-spacing: 0;
+    color: black;
+    font-size: 1rem;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
+
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 60px 0;
+
+}
+
+@media screen and (max-width: 800px) {
+    footer {
+        position: relative;
+        top: 20px;
+        font-size: 0.8rem;
+        margin-bottom: 30px;
+    }
+}
