@@ -28,17 +28,20 @@ function setRandomColor_1() {
 }
 
 function setRandomColor_2() {
-    let color1 = '#';
-    let color2 = '#';
+    let firstColor = '#';
+    let secondColor = '#';
 
     let letters = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'a', 'b', 'c', 'd', 'e', 'f'];
 
     for (let i = 0; i < 6; i++) {
-        color1 += letters[Math.floor(Math.random() * letters.length)];
-        color2 += letters[Math.floor(Math.random() * letters.length)];
+        firstColor += letters[Math.floor(Math.random() * letters.length)];
+        secondColor += letters[Math.floor(Math.random() * letters.length)];
     }
 
-    body.style.background = `linear-gradient(to right, ${color1} , ${color2})`;
+    body.style.background = `linear-gradient(to right, ${firstColor} , ${secondColor})`;
+
+    color1.setAttribute("value", firstColor);
+    color2.setAttribute("value", secondColor);
 
     css.textContent = `${body.style.background};`;
 }
